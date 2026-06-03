@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Analyzer Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patcss.css">
+  <script src="patjs.js" defer></script>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="app-header">
+      <h1>Password Analyzer </h1>
+      <p>Ensure your password is strong, secure, and protected!</p>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Enter Password</label>
+      <input type="text" id="password" placeholder="Enter your password" />
+      <small id="password-help" class="form-help">Password must be at least 8 characters long and include a mix of letters, numbers, and special characters.</small>
+    </div>
+
+    <button id="analyzeBtn" class="btn">Analyze Password</button>
+
+    <div id="result" class="result-section">
+      <div id="strengthLabel"></div>
+      <div id="passwordSuggestions"></div>
+    </div>
+  </div>
+</body>
+
+</html>
