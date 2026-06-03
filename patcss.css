@@ -1,0 +1,135 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eea7a7;
+  color: #1409af;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #c2eaf7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(104, 3, 3, 0.1);
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 3.5em;
+  color: #c20899;
+  font-family: 'algerian', sans-serif;
+}
+
+.app-header p {
+  font-size: 1.2em;
+  color: #e70f0f;
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.9em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #7e1e1e;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 2em;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #43a143;
+  box-shadow: 0 0 8px rgba(0, 204, 102, 0.3);
+}
+
+.form-help {
+  font-size: 1em;
+  color: #012336;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0b4d0c;
+  color: rgb(247, 247, 247);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #10b110;
+  transform: scale(1.07);
+}
+
+.result-section {
+  margin-top: 30px;
+  display: none;
+  text-align: left;
+}
+
+#strengthLabel {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#passwordSuggestions {
+  font-size: 1em;
+}
+
+#passwordSuggestions ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#passwordSuggestions li {
+  font-size: 1em;
+  color: #b80b0b;
+  line-height: 1.5;
+}
+
+#passwordSuggestions li strong {
+  color: #851307;
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .app-header h1 {
+    font-size: 2em;
+  }
+
+  .form-group input {
+    font-size: 1em;
+  }
+}
